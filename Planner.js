@@ -1,6 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $(".saveButton").on("click",function(){
+// Save inputs from textboxes
+
+    $(".saveButton").on("click", function () {
         var toDo = $(this).siblings(".hourly-tasks").val()
         var time = $(this).siblings().attr("id")
         // var time = $(this).siblings(".input-group-text").val()
@@ -8,10 +10,9 @@ $(document).ready(function(){
         console.log(time);
 
         // Save into local storage
-        localStorage.setItem(toDo, time)
+        localStorage.setItem(toDo, time);
 
-    })
+        // Prevent saved input from being erased when page is refreshed.
 
+    }
 
-    $("#9am .hourly-tasks").val(localStorage.getItem(toDo))
-})
