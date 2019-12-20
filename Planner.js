@@ -15,9 +15,8 @@ $(document).ready(function(){
         // Save into local storage
         localStorage.setItem(time, toDo);
 
-        // Prevent saved input from being erased when page is refreshed.
+        // Save input for each hour using hourly IDs. 
  
-
     })
 
     $("#hour-9").text(localStorage.getItem("9am"));
@@ -39,12 +38,12 @@ $(document).ready(function(){
     $("hour-5").text(localStorage.getItem("5pm"));
     var description = localStorage.getItem("5pm");
 
-    function renderDescription(time) ;
+    // function renderDescription(time);
    
-    console.log(time);
+    // console.log(time);
   
-    //     // var description = localStorage.getItem(time);
-    //     // console.log(description);
+    //     var description = localStorage.getItem(time);
+    //     console.log(description);
     //     $(".hourly-tasks").text(description);
     // }
 
