@@ -1,9 +1,19 @@
+
+
+
 $(document).ready(function(){
 
-    debugger;
+//  // Sets current day from moment function
+//  var curDate = moment().clone();
 
-    // Save inputs from textboxes
+//  // Sets current day in the header
+//  function setCurrentDateLabel() {
+//      $("#currentDay").text(curDate.format('dddd, MMMM Do'));
+//  };
 
+//     setCurrentDateLabel();
+
+   
     $(".saveButton").on("click", function (event) {
         event.preventDefault();
         var toDo = $(this).siblings(".hourly-tasks").val()
@@ -21,21 +31,21 @@ $(document).ready(function(){
 
     $("#hour-9").text(localStorage.getItem("9am"));
     var description = localStorage.getItem("9am");
-    $("hour-10").text(localStorage.getItem("10am"));
+    $("#hour-10").text(localStorage.getItem("10am"));
     var description = localStorage.getItem("10am");
-    $("hour-11").text(localStorage.getItem("11am"));
+    $("#hour-11").text(localStorage.getItem("11am"));
     var description = localStorage.getItem("11am");
-    $("hour-12").text(localStorage.getItem("12am"));
-    var description = localStorage.getItem("12am");
-    $("hour-1").text(localStorage.getItem("1pm"));
+    $("#hour-12").text(localStorage.getItem("12pm"));
+    var description = localStorage.getItem("12pm");
+    $("#hour-1").text(localStorage.getItem("1pm"));
     var description = localStorage.getItem("1pm");
-    $("hour-2").text(localStorage.getItem("2pm"));
+    $("#hour-2").text(localStorage.getItem("2pm"));
     var description = localStorage.getItem("2pm");
-    $("hour-3").text(localStorage.getItem("3pm"));
+    $("#hour-3").text(localStorage.getItem("3pm"));
     var description = localStorage.getItem("3pm");
-    $("hour-4").text(localStorage.getItem("4pm"));
+    $("#hour-4").text(localStorage.getItem("4pm"));
     var description = localStorage.getItem("4pm");
-    $("hour-5").text(localStorage.getItem("5pm"));
+    $("#hour-5").text(localStorage.getItem("5pm"));
     var description = localStorage.getItem("5pm");
 
     // function renderDescription(time);
@@ -50,4 +60,5 @@ $(document).ready(function(){
 
 
     // renderDescription(description); 
+
 });
