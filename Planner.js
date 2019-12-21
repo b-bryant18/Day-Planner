@@ -6,6 +6,8 @@ $(document).ready(function(){
 //  // Sets current day from moment function
 //  var curDate = moment().clone();
 
+// $("#currentDay").text(moment().format('LLLL'));
+
 //  // Sets current day in the header
 //  function setCurrentDateLabel() {
 //      $("#currentDay").text(curDate.format('dddd, MMMM Do'));
